@@ -1,0 +1,125 @@
+/* intial reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Full-page centered background image with fixed position and white text for contrast */
+body {
+    background-image: url(./resources/RNG_3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Centered container with max-width for content */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Large, styled header with neon glow effect */
+.header {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: #00f260;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    letter-spacing: 2px;
+}
+
+/* Button with gradient, glow, and hover effects */
+.generate-button {
+    background: linear-gradient(135deg, #00f260, #0575e6);
+    border: 3px solid #00f260;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+.generate-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+}
+
+/* Styled display area for generated ideas */
+.idea-display {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    font-size: 1.25rem;
+    min-height: 80px;
+    border: 2px solid #00f260;
+    color: #00f260;
+    letter-spacing: 1px;
+}
+
+/* Media query adjustments for tablets */
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .header {
+        font-size: 4rem;
+    }
+
+    .generate-button {
+        font-size: 1.8rem;
+    }
+
+    .idea-display {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media query adjustments for desktops */
+@media (min-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+
+    .header {
+        font-size: 4.5rem;
+    }
+
+    .generate-button {
+        font-size: 2rem;
+    }
+
+    .idea-display {
+        font-size: 1.75rem;
+    }
+}
+
+/* Pulse animation for button on hover */
+.generate-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
