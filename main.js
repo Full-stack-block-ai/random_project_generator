@@ -66,4 +66,14 @@ const generateRandomProject = () => {
     }
     return projectIdea
 }
-console.log(generateRandomProject())
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const messageButton = document.querySelector('.generate-button');
+    const messageDisplay = document.querySelector('.idea-display');
+
+    messageButton.addEventListener('click', function() {
+        const newProject = generateRandomProject();
+        messageDisplay.textContent = newProject;
+    });
+});
