@@ -20,6 +20,8 @@ body {
     color: #ffffff;
 }
 
+
+
 /* Centered container with max-width for content */
 .container {
     text-align: center;
@@ -59,7 +61,7 @@ body {
 .idea-display {
     margin-top: 30px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
     font-size: 1.25rem;
@@ -71,6 +73,11 @@ body {
 
 /* Media query adjustments for tablets */
 @media (min-width: 768px) {
+    body {
+        background-size: cover;  
+        background-position: center;
+    }
+
     .container {
         width: 70%;
     }
@@ -88,8 +95,13 @@ body {
     }
 }
 
-/* Media query adjustments for desktops */
+
 @media (min-width: 1024px) {
+    body {
+        background-size: cover;  
+        background-position: center;
+    }
+
     .container {
         width: 50%;
     }
@@ -106,6 +118,7 @@ body {
         font-size: 1.75rem;
     }
 }
+
 
 /* Pulse animation for button on hover */
 .generate-button:hover {
