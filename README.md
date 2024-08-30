@@ -5,6 +5,7 @@
 ## Features
 - Generates random project ideas for coding challenges.
 - Mixes project types, functionalities, and target audiences.
+- Mobile-first design for a responsive and user-friendly experience.
 - Easy to extend with more ideas.
 
 ## Getting Started
